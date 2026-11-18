@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#071b17">
+    <title>KIMNING IZI? - Animal Tracks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background">
+        <div class="glow glow1"></div>
+        <div class="glow glow2"></div>
+    </div>
+
+    <header class="topbar">
+        <div class="logo">
+            <span>🐾</span>
+            <div>
+                <h1>KIMNING IZI?</h1>
+                <small>ANIMAL TRACKS ADVENTURE</small>
+            </div>
+        </div>
+
+        <div class="top-stats">
+            <div class="stat">
+                <span>🏆</span>
+                <div>
+                    <small>REKORD</small>
+                    <b id="record">0</b>
+                </div>
+            </div>
+
+            <div class="stat">
+                <span>⭐</span>
+                <div>
+                    <small>BALL</small>
+                    <b id="score">0</b>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- BOSHLANISH EKRANI -->
+        <section class="welcome-screen" id="welcomeScreen">
+
+            <div class="welcome-animal">🐾</div>
+
+            <div class="tag">
+                🌲 SARGUZASHT BOSHLANMOQDA
+            </div>
+
+            <h2>Kimning izini <span>topa olasan?</span></h2>
+
+            <p>
+                O‘rmondagi sirli izlarni o‘rgan va qaysi
+                hayvonga tegishli ekanini aniqlab,
+                haqiqiy izquvar bo‘l!
+            </p>
+
+            <div class="welcome-features">
+                <div>🏆 Ball to‘pla</div>
+                <div>⏱️ Vaqtga qarshi</div>
+                <div>🌟 Bosqichlardan o‘t</div>
+            </div>
+
+            <button class="main-btn" id="startBtn">
+                O‘YINNI BOSHLASH <span>➜</span>
+            </button>
+
+        </section>
+
+        <!-- O'YIN EKRANI -->
+        <section class="game-screen hidden" id="gameScreen">
+
+            <div class="game-info">
+
+                <div class="level-box">
+                    <small>BOSQICH</small>
+                    <b id="level">1 / 10</b>
+                </div>
+
+                <div class="progress-area">
+                    <div class="progress-text">
+                        <span>RIVOJLANISH</span>
+                        <span id="progressText">10%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div id="progressFill"></div>
+                    </div>
+                </div>
+
+                <div class="timer-box">
+                    <span>⏱️</span>
+                    <b id="timer">20</b>
+                </div>
+
+            </div>
+
+            <div class="question-card">
+
+                <div class="forest-label">
+                    🌲 SIRLI O‘RMON
+                </div>
+
+                <h2>Bu kimning izi?</h2>
+
+                <p>
+                    Izlarni diqqat bilan kuzat va
+                    to‘g‘ri javobni tanla!
+                </p>
+
+                <div class="track-area">
+
+                    <div class="track-decoration">✦</div>
+
+                    <div class="track-symbol" id="trackSymbol">
+                        🐾
+                    </div>
+
+                    <div class="track-decoration second">✦</div>
+
+                    <div class="track-name" id="trackName">
+                        Sirli iz
+                    </div>
+
+                </div>
+
+                <div class="question-number" id="questionNumber">
+                    SAVOL 1
+                </div>
+
+                <div class="answers" id="answers">
+                </div>
+
+                <div class="game-bottom">
+
+                    <button class="hint-btn" id="hintBtn">
+                        💡 Yordam olish
+                    </button>
+
+                    <span id="hintCount">
+                        3 ta yordam qoldi
+                    </span>
+
+                </div>
+
+                <div class="message" id="message"></div>
+
+            </div>
+
+            <div class="bottom-info">
+                <span>🐾 Har bir izda bir sir yashiringan!</span>
+                <button id="exitBtn">✕ Chiqish</button>
+            </div>
+
+        </section>
+
+        <!-- NATIJA EKRANI -->
+        <section class="result-screen hidden" id="resultScreen">
+
+            <div class="result-icon" id="resultIcon">
+                🏆
+            </div>
+
+            <div class="tag">
+                SARGUZASHT YAKUNLANDI
+            </div>
+
+            <h2 id="resultTitle">
+                Ajoyib natija!
+            </h2>
+
+            <p id="resultDescription">
+                Sen haqiqiy izquvarsan!
+            </p>
+
+            <div class="result-stats">
+
+                <div>
+                    <span>⭐</span>
+                    <small>TO‘PLANGAN BALL</small>
+                    <b id="finalScore">0</b>
+                </div>
+
+                <div>
+                    <span>🎯</span>
+                    <small>TO‘G‘RI JAVOBLAR</small>
+                    <b id="correctAnswers">0/10</b>
+                </div>
+
+                <div>
+                    <span>🏆</span>
+                    <small>REKORD</small>
+                    <b id="finalRecord">0</b>
+                </div>
+
+            </div>
+
+            <button class="main-btn" id="restartBtn">
+                QAYTA O‘YNASH ↻
+            </button>
+
+        </section>
+
+    </main>
+
+    <!-- PASTKI QISM -->
+    <footer>
+
+        <p>
+            🐾 KIMNING IZI? • ANIMAL TRACKS GAME
+        </p>
+
+        <small>
+            Izquvarlik sarguzashtiga xush kelibsiz!
+        </small>
+
+        <div class="developer">
+            <span>DEVELOPED BY</span>
+            <strong>Ulug'bek.R</strong>
+            <span>© 2026</span>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
